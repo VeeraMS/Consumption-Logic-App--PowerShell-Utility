@@ -38,23 +38,33 @@ Steps to follow for executing the script:
 **Parameters definition:** 
 
 S.No	Parameter Name	Mandatory	Comments
+
 1	Client Id	No	The application /Client Id of your App Service Principal
+
 2	Tenant Id	No	Tenant Id of Azure AD or App Service Principal 
+
 3	Client Secret	No	Secret of your App Service Principal
+
 4	Subscription Id	Yes	Subscription Id where Logic App present
+
 5	Resource Group Name	Yes	Resource group Name in which Logic App is present
+
 6	Logic App Name	Yes	Name of your Logic App
+
 7	Operation	Yes	Allowed Values:
 BulkCancel - Cancel running instances
 BulkResubmitFailedRuns - Resubmits failed runs
 BulkResubmitCancelledRuns - Resubmits cancelled runs
 BulkResubmitSucceededRuns - Resubmits Succeeded runs
+
 8	StartTime	No	If present all above operations will be performed on the runs started from the specified time.
 The Timestamp must be in UTC. 
 Ex: 2020-11-02T16:33:00.000Z
+
 9	EndTime	No	You can include the EndTime along with StartTime if you want to perform above operations between specific timestamps.
 Note:
 It is invalid without StartTime. 
+
 
 			
 
