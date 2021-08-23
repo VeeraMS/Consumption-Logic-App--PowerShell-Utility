@@ -23,13 +23,13 @@ This PowerShell utility helps you to perform bulk operations on the Consumption 
       
 	• Execute the command to perform the different mentioned operations on Logic App
  
-	**To Log-in with user credentials:**
+	To Log-in with user credentials:
 
-	.\LogicAppUtility.ps1  -SubscriptionId '**Enter Subscription Id**' -ResourceGroupName '**Enter resource Group Name**' -LogicAppName '**Enter Logic App Name**' -Operation '**BulkCancel**' -StartTime '**2020-11-02T16:33:00.000Z**' -EndTime '**2020-11-02T16:38:00.000Z**’
+	.\LogicAppUtility.ps1  -SubscriptionId 'Enter Subscription Id' -ResourceGroupName 'Enter resource Group Name' -LogicAppName 'Enter Logic App Name' -Operation 'BulkCancel' -StartTime '2020-11-02T16:33:00.000Z' -EndTime '2020-11-02T16:38:00.000Z’
 
 	**To authenticate with user credentials:**
 
-		.\LogicAppUtility.ps1 -ClientId **'Enter ClientId'** -TenantId '**Enter TenantId**' -Secret '**Enter Secret**' -SubscriptionId '**Enter Subscription Id**' -ResourceGroupName '**Enter resource Group Name**' -LogicAppName '**Enter Logic App Name**' -Operation '**BulkCancel**' -StartTime '**2020-11-02T16:33:00.000Z**' -EndTime '**2020-11-02T16:38:00.000Z**’
+		.\LogicAppUtility.ps1 -ClientId 'Enter ClientId' -TenantId Enter TenantId' -Secret 'Enter Secret' -SubscriptionId 'Enter Subscription Id' -ResourceGroupName 'Enter resource Group Name' -LogicAppName 'Enter Logic App Name' -Operation '*BulkCancel' -StartTime '2020-11-02T16:33:00.000Z' -EndTime '2020-11-02T16:38:00.000Z’
 		
 		
 	•  Validate the text file gets created in the same folder for list of run ids that are executed on specified operation.
