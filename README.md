@@ -10,23 +10,26 @@ This PowerShell utility helps you to perform bulk operations on the Consumption 
 	• Copy the PowerShell script attached here to desired folder 
 	
 	• Ignore this step if your using user creds to login. If not, proceed with creating App registration from portal or using below blog.
-	          Set up Azure Service Principal - Contributor access on the Subscription. 
-		 https://blog.jongallant.com/2017/11/azure-rest-apis-postman/   
+	       Set up Azure Service Principal - Contributor access on the Subscription: https://blog.jongallant.com/2017/11/azure-rest-apis-postman/   
 		 
 	• Open PowerShell with 'Run As administrator Privileges' 
 	
 	• Run the below command to bypass the execution policy  and accept -Y
+	
 	      Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass  
 	      
-	• Change the directory to the PowerShell script copied folder in first step.
+	• Change the directory to the PowerShell script copied folder in first step
+	
 	     cd  'PowerShellScriptFolderPath'      
 	     
 	• Execute the command to perform the different mentioned operations on Logic App
 	
 	   To Log-in with user credentials:
+	   
 	     .\LogicAppUtility.ps1  -SubscriptionId 'Enter Subscription Id' -ResourceGroupName 'Enter resource Group Name' -LogicAppName 'Enter Logic App Name' -Operation                       'BulkCancel'           -StartTime '2020-11-02T16:33:00.000Z' -EndTime '2020-11-02T16:38:00.000Z’
 
 	   To authenticate with user credentials:
+	   
 	     .\LogicAppUtility.ps1 -ClientId 'Enter ClientId' -TenantId Enter TenantId' -Secret 'Enter Secret' -SubscriptionId 'Enter Subscription Id' -ResourceGroupName 'Enter                  resource Group Name' -LogicAppName 'Enter Logic App Name' -Operation '*BulkCancel' -StartTime '2020-11-02T16:33:00.000Z' -EndTime '2020-11-02T16:38:00.000Z’
 		
 		
