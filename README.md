@@ -27,15 +27,16 @@ Steps to follow for executing the script:
  
 **For user Sign-In option:**
 
-.\LogicAppUtility.ps1  -SubscriptionId 'Enter Subscription Id' -ResourceGroupName 'Enter resource Group Name' -LogicAppName 'Enter Logic App Name' -Operation 'BulkCancel' -StartTime '2020-11-02T16:33:00.000Z' -EndTime '2020-11-02T16:38:00.000Z’
+.\LogicAppUtility.ps1  -SubscriptionId '**Enter Subscription Id**' -ResourceGroupName '**Enter resource Group Name**' -LogicAppName '**Enter Logic App Name**' -Operation '**BulkCancel**' -StartTime '**2020-11-02T16:33:00.000Z**' -EndTime '**2020-11-02T16:38:00.000Z**’
 
 **For Azure AD SPN:**
-		.\LogicAppUtility.ps1 -ClientId 'Enter ClientId' -TenantId 'Enter TenantId' -Secret 'Enter Secret' -SubscriptionId 'Enter Subscription Id' -ResourceGroupName 'Enter resource Group Name' -LogicAppName 'Enter Logic App Name' -Operation 'BulkCancel' -StartTime '2020-11-02T16:33:00.000Z' -EndTime '2020-11-02T16:38:00.000Z’
+		.\LogicAppUtility.ps1 -ClientId **'Enter ClientId'** -TenantId '**Enter TenantId**' -Secret '**Enter Secret**' -SubscriptionId '**Enter Subscription Id**' -ResourceGroupName '**Enter resource Group Name**' -LogicAppName '**Enter Logic App Name**' -Operation '**BulkCancel**' -StartTime '**2020-11-02T16:33:00.000Z**' -EndTime '**2020-11-02T16:38:00.000Z**’
 		
 	•  Validate the text file gets created in the same folder for list of run ids that are executed on specified operation.
 	
 
-**Parameters definition:**
+**Parameters definition:** 
+
 S.No	Parameter Name	Mandatory	Comments
 1	Client Id	No	The application /Client Id of your App Service Principal
 2	Tenant Id	No	Tenant Id of Azure AD or App Service Principal 
@@ -44,24 +45,20 @@ S.No	Parameter Name	Mandatory	Comments
 5	Resource Group Name	Yes	Resource group Name in which Logic App is present
 6	Logic App Name	Yes	Name of your Logic App
 7	Operation	Yes	Allowed Values:
-			        BulkCancel - Cancel running instances
-			        BulkResubmitFailedRuns - Resubmits failed runs
-			        BulkResubmitCancelledRuns - Resubmits cancelled runs
-			        BulkResubmitSucceededRuns - Resubmits Succeeded runs
+BulkCancel - Cancel running instances
+BulkResubmitFailedRuns - Resubmits failed runs
+BulkResubmitCancelledRuns - Resubmits cancelled runs
+BulkResubmitSucceededRuns - Resubmits Succeeded runs
 8	StartTime	No	If present all above operations will be performed on the runs started from the specified time.
-			The Timestamp must be in UTC. 
-			Ex: 2020-11-02T16:33:00.000Z
+The Timestamp must be in UTC. 
+Ex: 2020-11-02T16:33:00.000Z
 9	EndTime	No	You can include the EndTime along with StartTime if you want to perform above operations between specific timestamps.
-			Note:
-			It is invalid without StartTime. 
+Note:
+It is invalid without StartTime. 
 
-
-Script:
-
-\\viki.fareast.corp.microsoft.com\BTSTeamShare\IndiaIntegrationTeam-TechTriages\2020-11-04-LA-PowerShell Utility
 			
 
 Note:
 	• Not recommended to run directly on the Production environment
 	• It is tested with limited test cases and volume of runs, Validate in test environments and then perform in Production
-![image](https://user-images.githubusercontent.com/82495659/130432230-9bcc9fb2-5e3c-427f-833b-3c83f1d5e238.png)
+
