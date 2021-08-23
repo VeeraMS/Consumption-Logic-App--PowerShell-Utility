@@ -1,6 +1,6 @@
 # Consumption-Logic-App--PowerShell-Utility
 
-This PowerShell utility helps you to perform bulk operations on the Consumption Logic App runs. And the below are the supported operations with this utility.
+This PowerShell utility helps you to perform bulk operations on the Consumption Logic App runs. And below are the supported operations with this utility.
 
 1. BulkCancel - Cancel running instances
 2. BulkResubmitFailedRuns - Resubmits failed runs
