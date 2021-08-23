@@ -8,23 +8,15 @@ The below are the supported operations with this utility.
 	4. BulkResubmitSucceededRuns - 	Resubmits Succeeded runs
 
 **Steps to follow for executing the script:**
-	• Copy the PowerShell script attached here to desired folder
-	
-	• Ignore this step if your user has access to Logic App, you can login with your user creds to  perform bulk operations. 
-	
+	• Copy the PowerShell script attached here to desired folder	
+	• Ignore this step if your user has access to Logic App, you can login with your user creds to  perform bulk operations.	
 	Set up Azure Service Principal - Contributor access on the Subscription. 
-		 https://blog.jongallant.com/2017/11/azure-rest-apis-postman/
-		 
-	• Open PowerShell with 'Run As administrator Privileges'
-	
-	• Run the below command to bypass the execution policy  and accept -Y
-	
-	      Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-	      
-	• Change the directory to the PowerShell script copied folder in first step.
-	
-	     cd  'PowerShellScriptFolderPath'
-	     
+		 https://blog.jongallant.com/2017/11/azure-rest-apis-postman/		 
+	• Open PowerShell with 'Run As administrator Privileges'	
+	• Run the below command to bypass the execution policy  and accept -Y	
+	      Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass	      
+	• Change the directory to the PowerShell script copied folder in first step.	
+	     cd  'PowerShellScriptFolderPath'	     
 	• Execute the command to perform the different mentioned operations on Logic App
 	
 **For user Sign-In option:**
@@ -59,12 +51,10 @@ S.No	Parameter Name	Mandatory	Comments
 			It is invalid without StartTime. 
 
 
-Script:
 
-\\viki.fareast.corp.microsoft.com\BTSTeamShare\IndiaIntegrationTeam-TechTriages\2020-11-04-LA-PowerShell Utility
-			
 
 Note:
 	• Not recommended to run directly on the Production environment
 	• It is tested with limited test cases and volume of runs, Validate in test environments and then perform in Production
-![image](https://user-images.githubusercontent.com/82495659/130430849-928f7d79-a310-4489-bcc1-b3da7b004b17.png)
+	
+
