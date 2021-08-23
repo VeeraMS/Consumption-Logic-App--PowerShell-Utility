@@ -24,17 +24,17 @@ This PowerShell utility helps you to perform bulk operations on the Consumption 
 5. Change the directory to the PowerShell script folder where its available.
 
 		cd  'PowerShellScriptFolderPath'
-6. Execute the one of the command below to perform the specified bulk operation on Standard Logic App workflow
+6. Execute one of the below commands to perform the specified bulk operation on Conusmption Logic App.
 
  To Log-in with user credentials:
 	   
-	     .\LogicAppUtility.ps1  -SubscriptionId 'Enter Subscription Id' -ResourceGroupName 'Enter resource Group Name' -LogicAppName 'Enter Logic App Name' -Operation                       'BulkCancel' -StartTime '2020-11-02T16:33:00.000Z' -EndTime '2020-11-02T16:38:00.000Z’
+	  .\LogicAppUtility.ps1  -SubscriptionId 'Enter Subscription Id' -ResourceGroupName 'Enter resource Group Name' -LogicAppName 'Enter Logic App Name' -Operation                       'BulkCancel' -StartTime '2020-11-02T16:33:00.000Z' -EndTime '2020-11-02T16:38:00.000Z’
 
 To authenticate with user credentials:
 	   
-	     .\LogicAppUtility.ps1 -ClientId 'Enter ClientId' -TenantId Enter TenantId' -Secret 'Enter Secret' -SubscriptionId 'Enter Subscription Id' -ResourceGroupName 'Enter                  resource Group Name' -LogicAppName 'Enter Logic App Name' -Operation '*BulkCancel' -StartTime '2020-11-02T16:33:00.000Z' -EndTime '2020-11-02T16:38:00.000Z’
+	 .\LogicAppUtility.ps1 -ClientId 'Enter ClientId' -TenantId Enter TenantId' -Secret 'Enter Secret' -SubscriptionId 'Enter Subscription Id' -ResourceGroupName 'Enter                  resource Group Name' -LogicAppName 'Enter Logic App Name' -Operation '*BulkCancel' -StartTime '2020-11-02T16:33:00.000Z' -EndTime '2020-11-02T16:38:00.000Z’
 	     
-7  Validate the text file gets created in the same folder for list of run ids that are executed on specified operation.
+7.  Log file gets generated in the script folder with the Run ids and their Start time, you may use these to cross verify the operation in the portal.
 	
 
 **Parameters definition:** 
@@ -43,7 +43,7 @@ To authenticate with user credentials:
 
 **Note:**
 
-	• Not recommended to run directly on the Production environment
+1. Not recommended to run directly on the Production environment
 	
-	• It is tested with limited test cases and volume of runs, Validate in test environments and then perform in Production
+2. It is tested with limited test cases and volume of runs, validate this in test environment prior to execute in Production.
 
