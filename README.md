@@ -10,6 +10,7 @@ This PowerShell utility helps you to perform bulk operations on the Consumption 
 	• Copy the PowerShell script attached here to desired folder 
 	
 	• Ignore this step if your using user creds to login. If not, proceed with creating App registration from portal or using below blog.
+	
 	       Set up Azure Service Principal - Contributor access on the Subscription: https://blog.jongallant.com/2017/11/azure-rest-apis-postman/   
 		 
 	• Open PowerShell with 'Run As administrator Privileges' 
