@@ -10,13 +10,14 @@ This PowerShell utility helps you to perform bulk operations on the Consumption 
 1. Copy the PowerShell script desired folder
 
 2. Ignore this step if your using user creds to login. If not, proceed with creating App registration from portal or using below blog.
+
 	Set up Azure Service Principal - Contributor access on the Subscription. https://blog.jongallant.com/2017/11/azure-rest-apis-postman/
 
 3. Open PowerShell with 'Run As administrator Privileges'
 
 4. Run the below command to bypass the execution policy and accept -Y
 
-	Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+		Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 	
 5. Change the directory to the PowerShell script folder where its available.
 
