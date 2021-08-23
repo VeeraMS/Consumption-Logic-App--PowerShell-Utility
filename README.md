@@ -7,23 +7,23 @@ This PowerShell utility helps you to perform bulk operations on the Consumption 
 
 **Steps to follow for executing the script:**
 
-	• Copy the PowerShell script attached here to desired folder 
+	1. Copy the PowerShell script attached here to desired folder 
 	
-	• Ignore this step if your using user creds to login. If not, proceed with creating App registration from portal or using below blog.
+	2 Ignore this step if your using user creds to login. If not, proceed with creating App registration from portal or using below blog.
 	
 	       Set up Azure Service Principal - Contributor access on the Subscription: https://blog.jongallant.com/2017/11/azure-rest-apis-postman/   
 		 
-	• Open PowerShell with 'Run As administrator Privileges' 
+	3  Open PowerShell with 'Run As administrator Privileges' 
 	
-	• Run the below command to bypass the execution policy  and accept -Y
+	4 Run the below command to bypass the execution policy  and accept -Y
 	
 	      Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass  
 	      
-	• Change the directory to the PowerShell script copied folder in first step
+	5 Change the directory to the PowerShell script copied folder in first step
 	
 	     cd  'PowerShellScriptFolderPath'      
 	     
-	• Execute the command to perform the different mentioned operations on Logic App
+	6 Execute the command to perform the different mentioned operations on Logic App
 	
 	   To Log-in with user credentials:
 	   
@@ -34,7 +34,7 @@ This PowerShell utility helps you to perform bulk operations on the Consumption 
 	     .\LogicAppUtility.ps1 -ClientId 'Enter ClientId' -TenantId Enter TenantId' -Secret 'Enter Secret' -SubscriptionId 'Enter Subscription Id' -ResourceGroupName 'Enter                  resource Group Name' -LogicAppName 'Enter Logic App Name' -Operation '*BulkCancel' -StartTime '2020-11-02T16:33:00.000Z' -EndTime '2020-11-02T16:38:00.000Z’
 		
 		
-	•  Validate the text file gets created in the same folder for list of run ids that are executed on specified operation.
+	7  Validate the text file gets created in the same folder for list of run ids that are executed on specified operation.
 	
 
 **Parameters definition:** 
