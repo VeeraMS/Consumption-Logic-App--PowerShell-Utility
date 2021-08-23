@@ -1,6 +1,3 @@
-# Consumption-Logic-App--PowerShell-Utility
-This PowerShell utility lets you do bulk operations like cancel , resubmit runs on the consumption Logic App.
-
 1.Copy the PowerShell script desired folder
 2.Set up Azure Service Principal - Contributor access on the Subscription. 
  https://blog.jongallant.com/2017/11/azure-rest-apis-postman/
